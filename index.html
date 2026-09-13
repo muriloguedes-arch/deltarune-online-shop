@@ -2,21 +2,32 @@
 <html>
     <head>
         <style>
-           /* This is a CSS (style) comment; it doesn't change anything regarding the final result. */
-        .boxes {
+           /* This is  CSS (style) comment; it doesn't change anything regarding the final result. */
+        
+        
+           #title{
+            display: flex;
+            justify-content: flex-start;
+        }
+            #search{
+                display: flex;
+                justify-content: center;
+            }
+
+           .box {
             display: flex;
             gap: 15px;
+            justify-content: flex-end;
         }
 
         #first{
-            background: #a254a0;
-            color:black;
+            color: black;
             padding: 5px;
             
         }
 
         img{
-            width:400px;
+            width:300px;
         }
          
         #second{
@@ -27,7 +38,7 @@
           /* Inside this <style> tag you're going to add the styles that you want for your page*/
         
       .button{
-        color:black;
+       color:black;
         padding: 10px;
         background: orange
         }
@@ -37,9 +48,20 @@
 
     <body>
           <!-- This is an HTML comment; it doesn't change anything regarding the final result. -->
+        <header>
+          <div class="boxes">
+            <div id="title" class="box">
+                <h1>Deltarune shop</h1>
+            </div>
+            <div id="search" class="box">
+                <input>
+            </div>
+        </div>  
+        </header>
+
 
         <div class="boxes">
-
+           
             <div id="first" class="box">
                 <img src="https://i.ebayimg.com/images/g/3XIAAeSwWQVo1N2N/s-l1200.jpg" alt="Description">
                 <h1>US $40</h1>
@@ -51,7 +73,7 @@
                 <img src="https://i.ebayimg.com/images/g/QZ0AAeSwGYJp8O4Q/s-l1200.jpg" alt="Decription">
                 <h1> US $39.21</h1>
                 <h2>deltarune oficial deck of cards</h2>
-                <button class="button">add to cart</button>
+                <button class="button" >add to cart</button>
                 
             </div>
 
@@ -60,8 +82,11 @@
             <h1> R$ 20.12</h1>
             <h2>Ralsie Mug</h2>
             <button class="button">add to cart</button>
-            
             </div>
+
+            </div>
+
+
                        
 
           <!-- Inside this <body> tag you're going to add all the content that you would like to show on your web page -->
